@@ -27,6 +27,7 @@ const scopes = [
   'user-library-read'
 ];
 
+console.log(_token);
 // If there is no token, redirect to Spotify authorization
 connectToSpotify.addEventListener('click', () => {
   if (!_token) {
