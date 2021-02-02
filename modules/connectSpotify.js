@@ -35,7 +35,6 @@ connectToSpotify.addEventListener('click', () => {
   }
 })
 const options = {
-  url: 'https://api.spotify.com/v1/me/top/artists',
   method: 'GET',
   headers: {
     'Authorization': 'Bearer ' + _token
@@ -43,10 +42,10 @@ const options = {
   json: true
 }
 if (_token) {
-  fetch(options).then(response => {
+  fetch('https://api.spotify.com/v1/me/top/artists', options).then(response => {
     console.log('response', response)
     return response.json()
   }).then(data => {
-    console.log(data);
+    console.log('data', data);
   })
 }
