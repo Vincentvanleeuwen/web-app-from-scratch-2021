@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/connectSpotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/connectSpotify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612258283059</updated>
-      <workItem from="1612258284099" duration="12206000" />
+      <workItem from="1612258284099" duration="12422000" />
     </task>
     <servers />
   </component>
