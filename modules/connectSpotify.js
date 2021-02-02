@@ -34,9 +34,22 @@ connectToSpotify.addEventListener('click', () => {
     window.location = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
 })
-
+var obj = {
+  method: 'GET',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Origin': '',
+    'Host': 'compare-music.netlify.app/'
+  },
+  body: JSON.stringify({
+    'client_id': clientID,
+    'client_secret': clientSecret,
+    'grant_type': 'client_credentials'
+  })
+}
 if (_token) {
-  fetch('https://api.spotify.com/v1/me/top/artists').then(response => {
+  fetch('https://api.spotify.com/v1/me/top/artists', obj).then(response => {
     return response.json()
   }).then(data => {
     console.log(data);
