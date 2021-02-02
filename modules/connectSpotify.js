@@ -27,21 +27,24 @@ const scopes = [
   'user-library-read'
 ];
 
-console.log(_token);
-
 connectToSpotify.addEventListener('click', () => {
   if (!_token) {
     window.location = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
-})
+});
+
 const options = {
-  method: 'GET',
-  headers: {
-    'Authorization': 'Bearer ' + _token
-  },
+  method: 'get',
+  headers: new Headers({
+    'Authorization': 'Bearer ' + _token,
+    'Content-Type': 'application/x-www-form-urlencoded'
+  }),
   json: true
 }
 if (_token) {
+
+  console.log('Current Token ====== ', _token);
+
   fetch('https://api.spotify.com/v1/me/top/artists', options).then(response => {
     console.log('response', response)
     return response.json()
