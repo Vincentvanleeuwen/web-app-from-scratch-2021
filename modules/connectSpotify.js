@@ -37,16 +37,9 @@ connectToSpotify.addEventListener('click', () => {
 var obj = {
   method: 'GET',
   headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-    'Origin': '',
-    'Host': 'compare-music.netlify.app/'
+    'Authorization': 'Basic ' + (new Buffer(clientID + ':' + clientSecret).toString('base64'))
   },
-  body: JSON.stringify({
-    'client_id': clientID,
-    'client_secret': clientSecret,
-    'grant_type': 'client_credentials'
-  })
+  json: true
 }
 if (_token) {
   fetch('https://api.spotify.com/v1/me/top/artists', obj).then(response => {
