@@ -42,7 +42,7 @@ import { clientID, clientSecret } from '../environment.js'
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
 
-var request = require('request'); // "Request" library
+var request = require(['request'], () => console.log('loaded')); // "Request" library
 
 // your application requests authorization
 var authOptions = {
