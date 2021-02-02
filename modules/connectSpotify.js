@@ -37,7 +37,7 @@ connectToSpotify.addEventListener('click', () => {
 var obj = {
   method: 'GET',
   headers: {
-    'Authorization': 'Basic ' + (new Buffer(clientID + ':' + clientSecret).toString('base64'))
+    'Authorization': 'Basic ' + ((clientID + ':' + clientSecret).toString('base64'))
   },
   json: true
 }
