@@ -21,7 +21,7 @@ let _token = hash.access_token;
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 // Replace with your app's client ID, redirect URI and desired scopes
-const redirectUri = 'compare-music.netlify.com';
+const redirectUri = 'https://compare-music.netlify.app';
 const scopes = [
   'user-read-email',
   'user-read-private',
