@@ -35,10 +35,10 @@ connectToSpotify.addEventListener('click', () => {
 
 const options = {
   method: 'get',
-  headers: new Headers({
-    'Authorization': 'Bearer ' + _token,
+  headers: {
+    'Authorization': 'Basic ' + (new Uint8Array(clientID + ':' + clientID).toString('base64')),
     'Content-Type': 'application/x-www-form-urlencoded'
-  }),
+  },
   json: true
 }
 if (_token) {
