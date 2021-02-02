@@ -34,15 +34,17 @@ connectToSpotify.addEventListener('click', () => {
     window.location = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
 })
-var obj = {
+const options = {
+  url: 'https://api.spotify.com/v1/me/top/artists',
   method: 'GET',
   headers: {
-    'Authorization': 'Basic ' + ((clientID + ':' + clientSecret).toString('base64'))
+    'Authorization': 'Bearer ' + _token
   },
   json: true
 }
 if (_token) {
-  fetch('https://api.spotify.com/v1/me/top/artists', obj).then(response => {
+  fetch(options).then(response => {
+    console.log('response', response)
     return response.json()
   }).then(data => {
     console.log(data);
