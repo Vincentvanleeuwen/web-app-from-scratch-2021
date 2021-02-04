@@ -20,7 +20,7 @@ window.location.hash = '';
 // Set token
 let _token = hash.access_token;
 const authEndpoint = 'https://accounts.spotify.com/authorize';
-const redirectUri = 'https://compare-music.netlify.app';
+const redirectUri = window.location.origin;
 const scopes = [
   'user-read-email',
   'user-read-private',
