@@ -4,7 +4,7 @@
 
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
-https://compare-music.netlify.app/
+https://https://combinify.netlify.app/
 <!-- ☝️ replace this description with a description of your own work -->
 
 Without making use of JavaScript frameworks I will be making an interactive music web application. 
