@@ -60,8 +60,11 @@ You can now preview the project when visiting http://localhost:3000
 <!-- ...but how does one use this project? What are its features 🤔 -->
 ## Features
 A playlist is created based on each of the people's top tracks.
+
 The user will be able to set the amount of songs or playlist length and a playlist name to start.
+
 You can add however many other profiles as you'd like.
+
 I will allow users to delete songs from the playlist.
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
