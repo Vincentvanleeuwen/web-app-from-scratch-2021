@@ -64,6 +64,8 @@ I will allow users to delete songs from the playlist.
 The [Spotify API](https://developer.spotify.com/documentation/web-api/) will be used in this project to get a list of a couple people's top tracks. 
 
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+
+## Checklist
 - [x] Connect to the spotify API
 - [x] Get the top tracks of the logged in user
 - [ ] Add more profiles
