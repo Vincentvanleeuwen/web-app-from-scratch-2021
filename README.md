@@ -1,12 +1,7 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
 
 
-## Learning goals
 
-* _You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns_
-* _You can retrieve data, manipulate it and dynamically convert it to html elements using templating_
-* _You understand how you can work with an external API using asynchronous code_
-* _You understand how you can manage state in your application and you inform the user of state where necessary_
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 https://compare-music.netlify.app/
@@ -21,6 +16,13 @@ Without making use of JavaScript frameworks I will be making an interactive musi
 <!-- Maybe a table of contents here? 📚 -->
 
 <!-- How about a section that describes how to install this project? 🤓 -->
+## Learning goals
+
+* _You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns_
+* _You can retrieve data, manipulate it and dynamically convert it to html elements using templating_
+* _You understand how you can work with an external API using asynchronous code_
+* _You understand how you can manage state in your application and you inform the user of state where necessary_
+
 ## Installation guide
 
 ```jsx
