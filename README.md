@@ -99,6 +99,8 @@ const options = {
     console.log('data', data); // Returns an object with 20 tracks in it
   })
 ```
+
+Check out the [Reference](https://developer.spotify.com/documentation/web-api/reference/) page for further explanation on what links to get what data from.
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
 ## Checklist
