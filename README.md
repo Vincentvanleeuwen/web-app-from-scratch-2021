@@ -68,6 +68,7 @@ The [Spotify API](https://developer.spotify.com/documentation/web-api/) will be 
 [x] - Get the top tracks of the logged in user
 [] - Add more profiles
 [] - Create a playlist
+
 [] - Set playlist name
 [] - Set max amount of songs
 [] - Set playlist length
