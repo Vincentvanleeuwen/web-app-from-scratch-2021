@@ -35,7 +35,7 @@ For security reasons, the spotify key has not been included, feel free to create
 [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
 > Create an app
 
-> Copy the Client ID and the Client Secret
+> Copy the Client ID
 
 > Create an environment.js in the main folder
 
