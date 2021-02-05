@@ -49,6 +49,9 @@ To run the project locally you will need browser-sync.
  // Install browser sync globally
  npm i -g browser-sync
  
+ // Go to the correct folder
+ cd C:/DesiredMap/web-app-from-scratch-2021
+ 
  // Run the server 
  browser-sync .
 ```
