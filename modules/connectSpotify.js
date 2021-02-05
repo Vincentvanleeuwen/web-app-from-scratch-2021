@@ -1,3 +1,21 @@
+// Create playlist based on 2 or more user profiles
+// Mix most listened songs together
+
+// Get user by username
+// GET /v1/users/{user_id}
+
+// Create a Playlist
+// POST	/v1/users/{user_id}/playlists
+
+// Get a Playlist
+// GET	/v1/playlists/{playlist_id}
+
+// Add Items to a Playlist
+// POST	/v1/playlists/{playlist_id}/tracks
+
+// FEATURE
+// Let the person choose how many songs there should be in the playlist
+
 import { clientID } from '../environment.js'
 import { fetchData } from '../utils/fetchData.js'
 import { convertToJSON } from '../utils/convertToJSON.js'
@@ -29,34 +47,26 @@ const scopes = [
   'user-library-read',
   'user-top-read'
 ]
-
+const endPoints = [
+  'https://api.spotify.com/v1/me/top/tracks',
+  'https://api.spotify.com/v1/me/'
+]
+const loginScreen = document.getElementById('login')
+const loggedInScreen = document.getElementById('loggedin')
+const userProfile = document.getElementById('user-profile')
 connectToSpotify.addEventListener('click', () => {
   if (!_token) {
     window.location = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
+
 })
 
 // export default _token;
 if (_token) {
+  loginScreen.classList.toggle('show-screen-flex')
+  loggedInScreen.classList.toggle('show-screen-flex')
 
 
-  // Create playlist based on 2 or more user profiles
-  // Mix most listened songs together
-
-  // Get user by username
-  // GET /v1/users/{user_id}
-
-  // Create a Playlist
-  // POST	/v1/users/{user_id}/playlists
-
-  // Get a Playlist
-  // GET	/v1/playlists/{playlist_id}
-
-  // Add Items to a Playlist
-  // POST	/v1/playlists/{playlist_id}/tracks
-
-  // FEATURE
-  // Let the person choose how many songs there should be in the playlist
   const options = {
     headers: {
       'Authorization': 'Bearer ' + _token,
@@ -65,10 +75,14 @@ if (_token) {
     json: true
   }
 
-  fetchData(['https://api.spotify.com/v1/me/top/tracks'], options)
+  fetchData(endPoints, options)
   .then(convertToJSON).then(data => {
     console.log('data', data);
+    let userData = {
+      name: data[1].display_name,
+      img: data[1].images[0].url
+    }
+
+    Transparency.render(userProfile, userData)
   })
-
-
 }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/convertToJSON.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/fetchData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-app-from-scratch-2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-app-from-scratch-2021.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/connectSpotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/connectSpotify.js" afterDir="false" />
     </list>
@@ -67,7 +67,7 @@
       <workItem from="1612258284099" duration="17876000" />
       <workItem from="1612433758026" duration="4856000" />
       <workItem from="1612453222154" duration="594000" />
-      <workItem from="1612527584911" duration="2916000" />
+      <workItem from="1612527584911" duration="5949000" />
     </task>
     <servers />
   </component>
