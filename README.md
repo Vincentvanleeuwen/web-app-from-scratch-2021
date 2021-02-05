@@ -7,8 +7,9 @@
 https://combinify.netlify.app/
 <!-- ☝️ replace this description with a description of your own work -->
 
-Without making use of JavaScript frameworks I will be making an interactive music web application. 
 
+Combinify is a playlist creating application that lets you create a combined playlist of multiple people their top 20 songs.
+This application will be made without the use of Javascript Frameworks.
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
