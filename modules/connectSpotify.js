@@ -1,6 +1,8 @@
-import { clientID, clientSecret } from '../environment.js'
+import { clientID } from '../environment.js'
+import { fetchData } from '../utils/fetchData.js'
+import { convertToJSON } from '../utils/convertToJSON.js'
 
-const connectToSpotify = document.getElementById('login-button');
+const connectToSpotify = document.getElementById('login-button')
 
 // https://gist.github.com/arirawr/f08a1e17db3a1f65ada2c17592757049
 
@@ -15,40 +17,58 @@ const hash = window.location.hash
   }
   return initial;
 }, {});
-window.location.hash = '';
+window.location.hash = ''
 
 // Set token
-let _token = hash.access_token;
-const authEndpoint = 'https://accounts.spotify.com/authorize';
-const redirectUri = window.location.origin;
+let _token = hash.access_token
+const authEndpoint = 'https://accounts.spotify.com/authorize'
+const redirectUri = window.location.origin
 const scopes = [
   'user-read-email',
   'user-read-private',
-  'user-library-read'
-];
+  'user-library-read',
+  'user-top-read'
+]
 
 connectToSpotify.addEventListener('click', () => {
   if (!_token) {
     window.location = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
-});
+})
 
-const options = {
-  method: 'get',
-  headers: {
-    'Authorization': 'Bearer ' + (_token),
-    'Content-Type': 'application/x-www-form-urlencoded'
-  },
-  json: true
-}
+// export default _token;
 if (_token) {
 
-  console.log('Current Token ====== ', _token);
 
-  fetch('https://api.spotify.com/v1/me/top/artists', options).then(response => {
-    console.log('response', response)
-    return response.json()
-  }).then(data => {
+  // Create playlist based on 2 or more user profiles
+  // Mix most listened songs together
+
+  // Get user by username
+  // GET /v1/users/{user_id}
+
+  // Create a Playlist
+  // POST	/v1/users/{user_id}/playlists
+
+  // Get a Playlist
+  // GET	/v1/playlists/{playlist_id}
+
+  // Add Items to a Playlist
+  // POST	/v1/playlists/{playlist_id}/tracks
+
+  // FEATURE
+  // Let the person choose how many songs there should be in the playlist
+  const options = {
+    headers: {
+      'Authorization': 'Bearer ' + _token,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    json: true
+  }
+
+  fetchData(['https://api.spotify.com/v1/me/top/tracks'], options)
+  .then(convertToJSON).then(data => {
     console.log('data', data);
   })
+
+
 }

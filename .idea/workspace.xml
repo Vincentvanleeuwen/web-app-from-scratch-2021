@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/convertToJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/fetchData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/connectSpotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/connectSpotify.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,13 +34,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../css-to-the-rescue-2021" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\utils" />
       <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021" />
       <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\docs\public" />
     </key>
@@ -60,7 +65,9 @@
       <option name="presentableId" value="Default" />
       <updated>1612258283059</updated>
       <workItem from="1612258284099" duration="17876000" />
-      <workItem from="1612433758026" duration="1856000" />
+      <workItem from="1612433758026" duration="4856000" />
+      <workItem from="1612453222154" duration="594000" />
+      <workItem from="1612527584911" duration="2916000" />
     </task>
     <servers />
   </component>
@@ -72,6 +79,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612264390212" />
+    <state x="2934" y="338" key="FileChooserDialogImpl" timestamp="1612532569486">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1014" y="338" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612450975572" />
+    <state x="2934" y="338" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612532569486" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1612272493166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
