@@ -63,6 +63,32 @@ I will allow users to delete songs from the playlist.
 
 The [Spotify API](https://developer.spotify.com/documentation/web-api/) will be used in this project to get a list of a couple people's top tracks. 
 
+There are four ways of authorization spotify. 
+Refreshable user authorization like
+- [Authorization Code Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow)
+- [Authorization Code Flow With Proof Key for Code Exchange (PKCE)](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow-with-proof-key-for-code-exchange-pkce)
+- [Client Credentials Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow)
+
+or Temporary user authorization
+- [Implicit Grant](https://developer.spotify.com/documentation/general/guides/authorization-guide/#implicit-grant-flow)
+
+Because refreshable user authorization requires node.js, I will have to use the implicit grant method.
+When authorized, I can use the returned key to get data from the spotify API.
+For instance If I'd want to see the top 20 list of tracks from a user I could simply do
+```jsx
+const options = {
+  headers: {
+    'Authorization': 'Bearer ' + _token,
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  json: true
+}
+  fetch('https://api.spotify.com/v1/me/top/tracks', options).then(response => {
+    return response.json()
+  }).then(data => {
+    console.log('data', data); // Returns an object with 20 tracks in it
+  })
+```
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
 ## Checklist
