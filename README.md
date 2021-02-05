@@ -66,11 +66,11 @@ The [Spotify API](https://developer.spotify.com/documentation/web-api/) will be 
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 - [x] Connect to the spotify API
 - [x] Get the top tracks of the logged in user
-- [] Add more profiles
-- [] Create a playlist
-- [] Set playlist name
-- [] Set max amount of songs
-- [] Set playlist length
-- [] Add songs to a playlist
-- [] Delete songs from a playlist
+- [ ] Add more profiles
+- [ ] Create a playlist
+- [ ] Set playlist name
+- [ ] Set max amount of songs
+- [ ] Set playlist length
+- [ ] Add songs to a playlist
+- [ ] Delete songs from a playlist
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
