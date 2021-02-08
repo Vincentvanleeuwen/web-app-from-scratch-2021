@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/getData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/web-app-from-scratch-2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-app-from-scratch-2021.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/connectSpotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/connectSpotify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/connectSpotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spotifyAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/fetchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetchData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../css-to-the-rescue-2021" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -67,7 +74,9 @@
       <workItem from="1612258284099" duration="17876000" />
       <workItem from="1612433758026" duration="4856000" />
       <workItem from="1612453222154" duration="594000" />
-      <workItem from="1612527584911" duration="5949000" />
+      <workItem from="1612527584911" duration="6571000" />
+      <workItem from="1612554241233" duration="553000" />
+      <workItem from="1612775017201" duration="12963000" />
     </task>
     <servers />
   </component>
@@ -79,6 +88,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612264390212" />
+    <state x="564" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612784708439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="564" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612784708439" />
     <state x="2934" y="338" key="FileChooserDialogImpl" timestamp="1612532569486">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

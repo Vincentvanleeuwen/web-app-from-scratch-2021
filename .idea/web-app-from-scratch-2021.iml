@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="transparency" level="application" />
+    <orderEntry type="library" name="routie" level="application" />
+    <orderEntry type="library" name="navigo" level="application" />
   </component>
 </module>
