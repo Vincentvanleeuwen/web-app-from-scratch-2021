@@ -25,16 +25,16 @@ const connectToSpotify = document.getElementById('login-button')
 // https://gist.github.com/arirawr/f08a1e17db3a1f65ada2c17592757049
 
 // Get the hash of the url
-const hash = window.location.hash
-.substring(1)
-.split('&')
-.reduce(function (initial, item) {
-  if (item) {
-    var parts = item.split('=');
-    initial[parts[0]] = decodeURIComponent(parts[1]);
-  }
-  return initial;
-}, {});
+const hash = window.location.hash.substring(1)
+                                 .split('&')
+                                 .reduce( (initial, item) => {
+                                    if (item) {
+                                      var parts = item.split('=');
+                                      initial[parts[0]] = decodeURIComponent(parts[1]);
+                                    }
+                                    return initial;
+                                 }, {});
+// Reset the hash
 window.location.hash = ''
 
 // Set token
@@ -77,12 +77,14 @@ if (_token) {
 
   fetchData(endPoints, options)
   .then(convertToJSON).then(data => {
-    console.log('data', data);
+
     let userData = {
       name: data[1].display_name,
       img: data[1].images[0].url
     }
 
     Transparency.render(userProfile, userData)
+
+    console.log('data', data);
   })
 }
