@@ -9,7 +9,7 @@ https://combinify.netlify.app/
 <!-- ☝️ replace this description with a description of your own work -->
 
 
-Combinify is a playlist creating application that lets you create a combined playlist of multiple people their top 20 songs.
+Combinify is a playlist creating application that lets you create a combined playlist of multiple people their top songs.
 This application will be made without the use of Javascript Frameworks.
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
