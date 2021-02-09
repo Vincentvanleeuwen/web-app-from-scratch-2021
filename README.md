@@ -104,6 +104,11 @@ const options = {
 Check out the [Reference](https://developer.spotify.com/documentation/web-api/reference/) page for further explanation on what links to get what data from.
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
+## Diagrams
+
+![Actor Diagram](https://github.com/Vincentvanleeuwen/web-app-from-scratch-2021/blob/master/img/actordiagram.png)
+![Interaction Diagram](https://github.com/Vincentvanleeuwen/web-app-from-scratch-2021/blob/master/img/interactiondiagram.png)
+
 ## Checklist
 - [x] Connect to the spotify API
 - [x] Get the top tracks of the logged in user
