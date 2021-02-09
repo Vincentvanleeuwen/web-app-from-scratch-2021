@@ -3,6 +3,8 @@ import { Routes } from "./router/routes.js";
 
 const loginScreen = document.getElementById('login')
 const loggedInScreen = document.getElementById('loggedin')
+const introText = document.querySelector('.intro-text')
+const appTitle = document.getElementById('app-title')
 
 const init = () => {
   Routes();
@@ -10,6 +12,8 @@ const init = () => {
   if (hashToken) {
     loginScreen.classList.toggle('show-screen-flex')
     loggedInScreen.classList.toggle('show-screen-flex')
+    introText.classList.toggle('show-screen-flex')
+    appTitle.classList.add('title-animation')
   }
 }
 

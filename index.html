@@ -9,33 +9,46 @@
           content="ie=edge">
     <link rel="stylesheet"
           href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-bg" width="375" height="812" viewBox="0 0 375 812">
+      <path id="Path_1" data-name="Path 1" d="M0,0H375S228.434,145.474,134.684,348.474,0,812,0,812Z" fill="#ff7a7a"/>
+    </svg>
+
+    <h1 id="app-title">Combinify</h1>
     <div class="container">
-      <h1>Combinify</h1>
-      <div id="login" class="show-screen-flex">
-        <button id="login-button">Log in with Spotify</button>
-      </div>
-      <div id="loggedin">
-        <div id="user-profile">
-          <h2 class="name"></h2>
-          <img src="#" alt="#" class="img"/>
+
+        <p class="intro-text show-screen-flex"> Combine the most listened songs from you and your friends.</p>
+        <div id="login" class="show-screen-flex">
+          <button id="login-button">Log in with Spotify</button>
         </div>
+        <div id="loggedin">
+          <div id="user-profile">
+
+            <img src="#" alt="#" class="img"/>
+            <h2 class="name"></h2>
+          </div>
+        </div>
+<!--        <ul class="songs">-->
+<!--          <li class="songArtist"></li>-->
+<!--          <li class="songName"></li>-->
+<!--        </ul>-->
       </div>
-    </div>
 
-    <!-- Necessary Libraries-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/transparency/0.11.0/transparency.min.js"
-            integrity="sha512-lU1RLhdHLM2eyH3Hzy7FqQCQ5fOwmW3FKUJAywpuxNNxx8pKGZNLvi35BykbXirNzRK0Vzqx0o8R82HCEs96/g=="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/navigo/8.8.6/navigo.min.js"
-            integrity="sha512-3yq4Xyb+lpw7MgZzCU3BKHZqt81iXVeEGjYa+AZAOYL1wr0tQqaqVcLjeuMjzJhT2EIrAH0SzYtAtth90rHqhw=="
-            crossorigin="anonymous"></script>
+      <!-- Necessary Libraries-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/transparency/0.11.0/transparency.min.js"
+              integrity="sha512-lU1RLhdHLM2eyH3Hzy7FqQCQ5fOwmW3FKUJAywpuxNNxx8pKGZNLvi35BykbXirNzRK0Vzqx0o8R82HCEs96/g=="
+              crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/routie/0.3.2/routie.min.js"
+              integrity="sha512-uawpwYzsuRBIPLEokpO3B70T3/gISq67oTbMbUxvO3CeWaDxvLxwSq6Lb3cYeGUj1Pr//s1tPjVmlRZ/HEDazQ=="
+              crossorigin="anonymous"></script>
 
-    <!-- Modules-->
-    <script src="app.js" type="module"></script>
-<!--    <script src="./router/routes.js"></script>-->
+      <!-- Modules-->
+      <script src="app.js" type="module"></script>
 
   </body>
 </html>
