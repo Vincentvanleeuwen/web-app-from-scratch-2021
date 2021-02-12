@@ -30,7 +30,7 @@ const scopes = [
 
 connectToSpotify.addEventListener('click', () => {
   if (!_token) {
-    window.location = `${authEndpoint}?client_id=${process.env.clientID || clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
+    window.location = `${authEndpoint}?client_id=${'b364d3b9da734592b09d1f0ae8ea7fd5' || clientID}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
   }
 })
 
