@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/spotifyAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spotifyAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <workItem from="1612830545886" duration="8596000" />
       <workItem from="1612961142472" duration="1563000" />
       <workItem from="1613041889526" duration="1224000" />
-      <workItem from="1613132769936" duration="2401000" />
+      <workItem from="1613132769936" duration="2464000" />
     </task>
     <servers />
   </component>
