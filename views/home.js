@@ -1,37 +1,32 @@
 import { hashToken } from "../modules/spotifyAuth.js";
 
-const userProfile = document.getElementById('user-profile')
+const userProfile = document.querySelector('.container')
 
 export const homeView = (getData) => {
  getData.then(data => {
    if (!hashToken) {
      return
    }
-   console.log(data[0])
-
-   let songs = [];
-   data[0].items.forEach(song => {
-     songs.push({
-       songName: song.name,
-       songArtist: song.artists[0].name
-     })
-   })
+   console.log(data[0].name, data[0].shortTerm, data[0].img)
 
    let userData = {
-     name: data[1].display_name,
-     songs: songs
+     people: data,
    }
-  console.log(songs)
+   console.log(userData)
+
    let directives= {
-     img: {
-       src: function() {
-         return data[1].images[0].url;
+     person: {
+       image: {
+         src: (params) => { this.img },
+         alt: (params) => { this.name + ' profile picture'}
+       },
+       name: {
+         html: (params) => { this.name }
        }
      }
    }
 
-
-   Transparency.render(userProfile, userData, directives)
+   Transparency.render(userProfile, userData, directives, {debug: true})
  }).catch(err=> console.log(err))
 
 }

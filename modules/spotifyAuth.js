@@ -25,7 +25,9 @@ const scopes = [
   'user-read-email',
   'user-read-private',
   'user-library-read',
-  'user-top-read'
+  'user-top-read',
+  'playlist-read-collaborative',
+  'playlist-modify-public'
 ]
 
 connectToSpotify.addEventListener('click', () => {

@@ -16,7 +16,7 @@
   margin: 0;
 }
 #app-title {
-  font-size: calc(12px + 10vw);
+  font-size: min(calc(12px + 10vw), 4em);
   text-align: center;
   font-family: "Comfortaa", sans-serif;
   font-weight: 300;
@@ -81,10 +81,9 @@ body {
 }
 .intro-text {
   display: none;
-  font-size: calc(12px + 1vw);
+  font-size: min(calc(12px + 1vw), 1em);
   color: white;
   text-align: center;
-  width: 75%;
   margin-top: 5em;
 }
 
