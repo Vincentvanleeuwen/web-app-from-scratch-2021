@@ -113,8 +113,8 @@ Check out the [Reference](https://developer.spotify.com/documentation/web-api/re
 - [x] Connect to the spotify API
 - [x] Get the top tracks of the logged in user
 - [ ] Add more profiles
-- [ ] Create a playlist
-- [ ] Set playlist name
+- [x] Create a playlist
+- [x] Set playlist name
 - [ ] Set max amount of songs
 - [ ] Set playlist length
 - [ ] Add songs to a playlist
