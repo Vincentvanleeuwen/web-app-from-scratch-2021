@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/transformData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/postData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/createPlaylist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/playlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/transformData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/transformData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/spotifyAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spotifyAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../css-to-the-rescue-2021" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -47,6 +50,10 @@
       <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\utils" />
       <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021" />
       <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\docs\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\data" />
+      <recent name="D:\School\HvA\Minor\web-app-from-scratch-2021\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,7 +84,11 @@
       <workItem from="1612961142472" duration="1563000" />
       <workItem from="1613041889526" duration="1224000" />
       <workItem from="1613132769936" duration="6030000" />
-      <workItem from="1613381129758" duration="17742000" />
+      <workItem from="1613381129758" duration="19990000" />
+      <workItem from="1613469697560" duration="23746000" />
+      <workItem from="1613559640668" duration="1791000" />
+      <workItem from="1613645726372" duration="1195000" />
+      <workItem from="1613730822909" duration="2943000" />
     </task>
     <servers />
   </component>

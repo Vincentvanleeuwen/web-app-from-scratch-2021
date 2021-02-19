@@ -1,13 +1,17 @@
 import { homeView } from "../views/home.js";
+import { createPlaylistView } from "../views/createPlaylist.js";
+import { playlistView } from "../views/playlist.js";
 import { getData } from "../data/getData.js"
 
 export const Routes = () => {
   try {
     routie({
-        // Create a playlist, set the properties [length, amount songs, name]
+        // Login/Create playlist
         '': () => { homeView(getData) },
-        // Send a playlist link to your friends, they log in and their top songs get mixed
-        'new-playlist/*': () => { console.log('new Playlist!')}
+        // Set the playlist settings
+        'new-playlist/*': () => { createPlaylistView(getData)},
+        // Add people to the playlist
+        'playlist/*': () => { playlistView(getData)}
     })
 
   } catch (e) {

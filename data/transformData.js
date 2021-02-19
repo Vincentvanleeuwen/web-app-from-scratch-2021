@@ -59,16 +59,15 @@ export const restructureData = (data) => {
         id: spotifyId,
         name: null,
         img: null,
-        shortTerm: shortTermSongs,
-        mediumTerm: mediumTermSongs,
-        longTerm: longTermSongs
+        songsShortTerm: shortTermSongs,
+        songsMediumTerm: mediumTermSongs,
+        songsLongTerm: longTermSongs
       }
       acc.push(newPerson)
     }
     return acc;
   }, []);
 }
-
 
 const songObject = (song) => {
   return {

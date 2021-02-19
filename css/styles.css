@@ -48,16 +48,19 @@ body {
 }
 
 /* Login */
-#login {
+#login, #playlist-btn {
   display: none;
   margin-top: 5em;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 #loggedin {
   display: none;
+  margin-top:0;
+  transform: scale(1);
 }
-#login-button {
+.btn {
   width: 17vw;
   min-width: 15em;
   height: 3em;
@@ -71,6 +74,102 @@ body {
   font-size: 1em;
   font-weight: 700;
 
+}
+.share-buttons {
+  transform: scale(0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.share-buttons .btn {
+  min-width: 10em;
+
+}
+#copy-button, #save-button {
+  margin: .5em;
+}
+#copy-button {
+  background-color: #FE9D65;
+}
+.playlist-options {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+#playlist-form {
+  margin-top: 1em;
+  height: 40vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#playlist-form label {
+  display: flex;
+  flex-direction: column;
+  margin: .2em;
+  line-height: 1.7em;
+  padding: 0 .5em;
+  color: #fff;
+}
+#playlist-form input[type="text"]:focus {
+  outline: 0;
+  border-bottom: solid 1px #ff7a7a;
+}
+#playlist-form input[type="text"] {
+  border: 0;
+  background-color: transparent;
+  border-bottom: solid #fff 1px;
+  color: #fff;
+  padding: .5em;
+}
+#playlist-form input[type="text"]:last-child {
+  border: 0;
+  background-color: transparent;
+  border-bottom: solid #fff 1px;
+}
+#duration {
+  width: 20%;
+}
+#playlist-form fieldset {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: .5em 1em;
+  max-height: 4em;
+  overflow: hidden;
+}
+#playlist-form fieldset label {
+  cursor: pointer;
+  color: #000;
+}
+#playlist-form fieldset input:checked + label {
+  background-color: #ff7a7a;
+  color: #fff;
+  padding: 2em 1em;
+  margin: -1em 0 0 0;
+  line-height: 0;
+  font-weight: bold;
+}
+#playlist-form fieldset input:first-child:checked + label {
+  margin-left: -1em;
+  padding-left: 2em;
+}
+#playlist-form fieldset input:last-of-type:checked + label {
+  margin-right: -1em;
+  padding-right: 2em;
+}
+#playlist-form fieldset input {
+  display: none;
+}
+#playlist-btn {
+  background-color: #ff7a7a;
+  display: none;
+  margin-top: 2em;
 }
 #login-button:hover {
   background-color: #1ED760;
@@ -108,6 +207,9 @@ body {
 .title-animation {
   animation: title-up 1s forwards;
 }
+.avatar-animation {
+  animation: avatar-animation 1s forwards;
+}
 @keyframes title-up {
   from {
     padding-top: 3em;
@@ -115,4 +217,29 @@ body {
   to {
     padding-top: .5em;
   }
+}
+@keyframes avatar-animation {
+  to {
+    margin-top: -5em;
+    transform: scale(0.8);
+  }
+}
+/*Every class starting with "songs"*/
+[class^="songs"] {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+}
+[class^="songs"] li {
+  display:flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: min(calc(12px + 4vw), 4em);
+  margin-bottom: 1em;
+}
+[class^="songs"] li span:first-of-type {
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 700;
 }

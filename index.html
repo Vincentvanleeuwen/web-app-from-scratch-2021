@@ -20,36 +20,80 @@
     </svg>
 
     <h1 id="app-title">Combinify</h1>
+
     <div class="container">
 
-        <p class="intro-text show-screen-flex"> Combine the most listened songs from you and your friends.</p>
-        <div id="login" class="show-screen-flex">
-          <button id="login-button">Log in with Spotify</button>
-        </div>
-        <div id="loggedin" class="people">
-          <div id="user-profile" class="person">
+      <p class="intro-text show-screen-flex"> Combine the most listened songs from you and your friends.</p>
+      <div id="login" class="show-screen-flex">
+        <button class="btn" id="login-button">Log in with Spotify</button>
+      </div>
+      <div id="loggedin" class="people">
+        <div id="user-profile" class="person">
 
-            <img src="#" alt="#" class="image"/>
-            <h2 class="name"></h2>
-          </div>
-        </div>
+          <img src="#" alt="#" class="image"/>
+          <h2 class="name"></h2>
 
-<!--        <ul class="songs">-->
-<!--          <li class="songArtist"></li>-->
-<!--          <li class="songName"></li>-->
-<!--        </ul>-->
+        </div>
       </div>
 
-      <!-- Necessary Libraries-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/transparency/0.11.0/transparency.min.js"
-              integrity="sha512-lU1RLhdHLM2eyH3Hzy7FqQCQ5fOwmW3FKUJAywpuxNNxx8pKGZNLvi35BykbXirNzRK0Vzqx0o8R82HCEs96/g=="
-              crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/routie/0.3.2/routie.min.js"
-              integrity="sha512-uawpwYzsuRBIPLEokpO3B70T3/gISq67oTbMbUxvO3CeWaDxvLxwSq6Lb3cYeGUj1Pr//s1tPjVmlRZ/HEDazQ=="
-              crossorigin="anonymous"></script>
+      <form id="playlist-form" action="post">
+        <label for="playlist-name">
+          Name Playlist
+          <input id="playlist-name" type="text" placeholder="E.g. 'The coolest playlist!'" required>
+        </label>
+        <label for="duration">
+          Max amount of songs
+          <input id="duration" type="text" placeholder="40" required>
+        </label>
+        <fieldset>
+          <input type="radio" name="term" id="short">
+          <label for="short">
+            Short Term
 
-      <!-- Modules-->
-      <script src="app.js" type="module"></script>
+          </label>
+          <input type="radio" name="term" id="medium" checked>
+          <label for="medium">
+            Medium Term
+
+          </label>
+          <input type="radio" name="term" id="long">
+          <label for="long">
+            Long Term
+
+          </label>
+        </fieldset>
+
+      </form>
+      <div class="playlist-options">
+        <h2 class="playlistname"></h2>
+        <div class="share-buttons show-screen-flex">
+          <button id="copy-button" class="btn">Copy playlist URL</button>
+          <button id="save-button" class="btn">Save Playlist to account</button>
+        </div>
+      </div>
+
+      <div id="playlist" class="show-screen-flex">
+        <button id="playlist-btn" class="btn">Create a Playlist</button>
+      </div>
+
+      <ul class="songs">
+<!--        <li class="song">-->
+<!--          <span class="songArtist"></span>-->
+<!--          <span class="songName"></span>-->
+<!--        </li>-->
+      </ul>
+    </div>
+
+    <!-- Necessary Libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/transparency/0.11.0/transparency.min.js"
+            integrity="sha512-lU1RLhdHLM2eyH3Hzy7FqQCQ5fOwmW3FKUJAywpuxNNxx8pKGZNLvi35BykbXirNzRK0Vzqx0o8R82HCEs96/g=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/routie/0.3.2/routie.min.js"
+            integrity="sha512-uawpwYzsuRBIPLEokpO3B70T3/gISq67oTbMbUxvO3CeWaDxvLxwSq6Lb3cYeGUj1Pr//s1tPjVmlRZ/HEDazQ=="
+            crossorigin="anonymous"></script>
+
+    <!-- Modules-->
+    <script src="app.js" type="module"></script>
 
   </body>
 </html>
