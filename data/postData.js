@@ -2,7 +2,10 @@ import { fetchData } from "../utils/fetchData.js";
 import { convertToJSON } from "../utils/convertToJSON.js";
 import { hashToken } from "../modules/spotifyAuth.js";
 
-const playlistObject = JSON.parse(window.localStorage.getItem('playlist'));
+if( hashToken) {
+  const playlistObject = JSON.parse(window.localStorage.getItem('playlist'));
+}
+
 
 const options = {
   method: 'POST',
@@ -17,7 +20,7 @@ const options = {
   }),
   json: true
 }
-
+let isLoading = true;
 // Export the data so routes can use it.
 export const postData = (id) => {
   console.log(id);
@@ -29,5 +32,6 @@ export const postData = (id) => {
 
   .then(data => { return console.log(data) })
   .catch(err => console.warn(err, 'Error fetching Data'))
+  .finally(()=>{ isLoading = false; });
 }
 
