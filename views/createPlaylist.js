@@ -8,11 +8,7 @@ const playlistDuration = document.getElementById('duration')
 const medium = document.getElementById('medium')
 const long = document.getElementById('long')
 const avatar = document.getElementById('loggedin')
-let playlistObject = {
-  term: null,
-  duration: null,
-  playlistName: null
-}
+
 
 export const createPlaylistView = (getData) => {
  getData.then(data => {
@@ -30,10 +26,14 @@ export const createPlaylistView = (getData) => {
      if (long.checked) { term = 'songsLongTerm' }
      else if (medium.checked) { term = 'songsMediumTerm'}
      else { term = 'songsShortTerm'}
-
-     playlistObject.term = term
-     playlistObject.duration = playlistDuration.value
-     playlistObject.playlistName = playlistName.value
+     let playlistObject = {
+       term: term,
+       duration: playlistDuration.value,
+       playlistName:  playlistName.value
+     }
+     // playlistObject.term = term
+     // playlistObject.duration = playlistDuration.value
+     // playlistObject.playlistName = playlistName.value
 
 
      window.localStorage.setItem('playlist', JSON.stringify(playlistObject))
@@ -64,7 +64,7 @@ export const createPlaylistView = (getData) => {
      }
    };
 
-   Transparency.render(userProfile, people, directives,{debug: true})
+   Transparency.render(userProfile, people, directives)
  }).catch(err => console.log(err))
 
 }

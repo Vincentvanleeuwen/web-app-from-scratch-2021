@@ -3,6 +3,9 @@ import { hashToken } from "../modules/spotifyAuth.js";
 const userProfile = document.querySelector('.container')
 const playlistBtn = document.getElementById('playlist-btn')
 
+//Reset local storage
+window.localStorage.removeItem('playlist')
+
 export const homeView = (getData) => {
  getData.then(data => {
    if (!hashToken) {
@@ -33,7 +36,7 @@ export const homeView = (getData) => {
      }
    };
 
-   Transparency.render(userProfile, people, directives,{debug: true})
+   Transparency.render(userProfile, people, directives)
  }).catch(err => console.log(err))
 
 }

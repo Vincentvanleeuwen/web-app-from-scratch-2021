@@ -64,25 +64,29 @@
         </fieldset>
 
       </form>
-      <div class="playlist-options">
+      <section class="playlist-options">
         <h2 class="playlistname"></h2>
         <div class="share-buttons show-screen-flex">
           <button id="copy-button" class="btn">Copy playlist URL</button>
+
+            <input id="copy-text" type="text"/>
+
           <button id="save-button" class="btn">Save Playlist to account</button>
         </div>
-      </div>
+      </section>
 
       <div id="playlist" class="show-screen-flex">
         <button id="playlist-btn" class="btn">Create a Playlist</button>
       </div>
 
-      <ul class="songs">
-<!--        <li class="song">-->
-<!--          <span class="songArtist"></span>-->
-<!--          <span class="songName"></span>-->
-<!--        </li>-->
-      </ul>
+      <section class="song-lists">
+        <h2> Your Addition</h2>
+        <ul class="songs"></ul>
+      </section>
+
+
     </div>
+
 
     <!-- Necessary Libraries-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/transparency/0.11.0/transparency.min.js"

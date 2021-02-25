@@ -1,17 +1,17 @@
 import { homeView } from "../views/home.js";
 import { createPlaylistView } from "../views/createPlaylist.js";
 import { playlistView } from "../views/playlist.js";
-import { getData } from "../data/getData.js"
+import { getProfile, getSongs } from "../data/getData.js"
 
 export const Routes = () => {
   try {
     routie({
         // Login/Create playlist
-        '': () => { homeView(getData) },
+        '': () => { homeView(getProfile) },
         // Set the playlist settings
-        'new-playlist/*': () => { createPlaylistView(getData)},
+        'new-playlist/*': () => { createPlaylistView(getProfile)},
         // Add people to the playlist
-        'playlist/*': () => { playlistView(getData)}
+        'playlist/*': () => { playlistView(getProfile, getSongs)}
     })
 
   } catch (e) {

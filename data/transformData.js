@@ -6,11 +6,8 @@ const dataAttributes = [
 ]
 
 export const deleteColumns = (data) => {
-  console.log('unfiltered', data)
 
-  return data.map(dataset => {
-
-    return Object.entries(dataset).map(entry => {
+  return Object.entries(data).map(entry => {
 
       if(!dataAttributes.includes(entry[0])) {
         delete entry[0]
@@ -22,30 +19,15 @@ export const deleteColumns = (data) => {
     })
     .filter(entry => entry !== undefined)
 
-  })
 }
-
 
 export const restructureData = (data) => {
 
-  const personInfo = data[0]
-  const shortTerm = data[1]
-  const mediumTerm = data[2]
-  const longTerm = data[3]
+  let spotifyId = data[1][1],
+    displayName = data[0][1],
+    spotifyImg = data[2][1][0].url
 
-  let shortTermSongs = [],
-      mediumTermSongs = [],
-      longTermSongs = []
-
-  let spotifyId = personInfo[1][1],
-    displayName = personInfo[0][1],
-    spotifyImg = personInfo[2][1][0].url
-
-  shortTerm[0][1].forEach(song => { shortTermSongs.push(songObject(song)) })
-  mediumTerm[0][1].forEach(song => { mediumTermSongs.push(songObject(song)) })
-  longTerm[0][1].forEach(song => { longTermSongs.push(songObject(song)) })
-
-  return personInfo.reduce((acc) => {
+  return data.reduce((acc) => {
 
     let checkIndex = acc.findIndex(person => person.id === spotifyId)
 
@@ -59,14 +41,19 @@ export const restructureData = (data) => {
         id: spotifyId,
         name: null,
         img: null,
-        songsShortTerm: shortTermSongs,
-        songsMediumTerm: mediumTermSongs,
-        songsLongTerm: longTermSongs
+        songs: null
       }
       acc.push(newPerson)
     }
     return acc;
   }, []);
+}
+
+
+export const restructureSongs = (data) => {
+  let songs = []
+  data[0][1].forEach(song => { songs.push(songObject(song)) })
+  return songs
 }
 
 const songObject = (song) => {

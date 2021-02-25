@@ -27,6 +27,7 @@
 }
 
 body {
+  position: relative;
   display: grid;
   /*grid-template-columns: repeat(2, 1fr) auto repeat(2, 1fr);*/
   grid-template-columns: 1fr;
@@ -237,9 +238,40 @@ body {
   color: #fff;
   font-size: min(calc(12px + 4vw), 4em);
   margin-bottom: 1em;
+  text-align: center;
 }
 [class^="songs"] li span:first-of-type {
   font-family: "Raleway", sans-serif;
-
   font-weight: 700;
+}
+.song-lists {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.song-lists h2 {
+  text-align: center;
+  color: white;
+  margin: 1.5em;
+  border-bottom: 3px solid white;
+  width: max-content;
+}
+
+/* Loader */
+.saving:after {
+  content: "Saving..."
+}
+#copy-text {
+  opacity:0;
+}
+@keyframes slide-up {
+  from{
+    left: 9em;
+    opacity: 0;
+  }
+  to {
+    left: 10em;
+    opacity: 1;
+  }
 }
