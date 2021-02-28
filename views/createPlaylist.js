@@ -25,7 +25,7 @@ export const createPlaylistView = (getData) => {
    playlistBtn.addEventListener('click', () => {
 
      if(playlistName.value === '') {
-       error.classList.toggle('show-screen-flex')
+       errorMsg.classList.toggle('show-screen-flex')
        return
      }
      if (long.checked) { term = 'songsLongTerm' }
