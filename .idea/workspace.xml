@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/addSongsToPlaylist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/postData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/postData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/transformData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/transformData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/spotifyAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spotifyAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/convertToJSON.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/fetchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetchData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/createPlaylist.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/createPlaylist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/playlist.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +83,8 @@
       <workItem from="1613559640668" duration="1791000" />
       <workItem from="1613645726372" duration="1195000" />
       <workItem from="1613730822909" duration="6481000" />
-      <workItem from="1614255773057" duration="20040000" />
+      <workItem from="1614255773057" duration="20634000" />
+      <workItem from="1614521824767" duration="2569000" />
     </task>
     <servers />
   </component>
