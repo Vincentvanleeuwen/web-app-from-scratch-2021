@@ -167,11 +167,23 @@ body {
 #playlist-form fieldset input {
   display: none;
 }
+#playlist-form fieldset legend {
+  display: none;
+}
 #playlist-btn {
   background-color: #ff7a7a;
   display: none;
   margin-top: 2em;
 }
+.error-msg {
+  display: none;
+  position: absolute;
+  color: orange;
+  left: 55%;
+  font-size: clamp(.5em, 1vw, 2em);
+  transition: .5s;
+}
+
 #login-button:hover {
   background-color: #1ED760;
 }
@@ -232,17 +244,33 @@ body {
   list-style-type: none;
   justify-content: center;
 }
-[class^="songs"] li {
+[class^="songs"] div {
   display:flex;
+  flex-direction: row;
+  color: #ffffff;
+  width: clamp(16em, 42vw, 25em);
+}
+[class^="songs"] div div {
+  display: flex;
   flex-direction: column;
   color: #fff;
-  font-size: min(calc(12px + 4vw), 4em);
+  font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 1em;
-  text-align: center;
+  text-align: left;
 }
-[class^="songs"] li span:first-of-type {
+[class^="songs"] div div p:first-of-type {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+}
+[class^="songs"] div div p:last-of-type{
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+[class^="songs"] div span {
+  font-size: clamp(1rem, 7vw, 3rem);
+  color: #FB6161;
+  cursor: pointer;
 }
 .song-lists {
   display: none;
@@ -277,22 +305,34 @@ body {
 }
 
 @media screen and (max-width: 40em){
+  #playlist-form {
+    height: max-content;
+  }
   #playlist-form fieldset {
     flex-direction: column;
-    max-height: 10em;
+    max-height: max-content;
+    background-color: transparent;
+    color: white;
+    margin-top: 2em;
   }
-  #playlist-form fieldset input:checked ~ label {
-    padding: .5em;
-    margin: 0;
-    border-radius: 5px;
+  #playlist-form fieldset legend {
+    display: flex;
   }
-  #playlist-form fieldset input:first-child:checked + label {
-     margin: 0;
-     padding: 1em;
+  #playlist-form fieldset label {
+    color: white;
+    transition: .5s;
   }
-  #playlist-form fieldset input:last-of-type:checked + label {
+  #playlist-form fieldset input:checked + label {
     margin: 0;
     padding: 1em;
+    border-radius: 5px;
+  }
+  #playlist-form fieldset input:first-of-type:checked + label {
+    margin-left: 0;
+
+  }
+  #playlist-form fieldset input:last-of-type:checked + label {
+    margin-right: 0;
   }
   #playlist-form fieldset input ~ label {
     padding: .5em;

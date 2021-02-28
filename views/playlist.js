@@ -12,10 +12,6 @@ const copyBtn = document.getElementById('copy-button');
 const copyTxt = document.getElementById('copy-text');
 const songLists = document.querySelector('.song-lists');
 
-
-// const playlistID = window.localStorage.getItem('playlistID')
-// const playlistHref = window.localStorage.getItem('playlistHref')
-
 export const playlistView = (getProfile, getSongs) => {
 
  getProfile.then(data => {
@@ -56,10 +52,12 @@ export const playlistView = (getProfile, getSongs) => {
    else {
      loginScreen.classList.remove('show-screen-flex')
 
+     // Add the correct songs to the songs object
      getSongs().then(songs => {
        data[0].songs = songs
+
        let people = data;
-       console.log(data)
+
        let directives = {
          image: {
            src: function(params) {
@@ -72,20 +70,6 @@ export const playlistView = (getProfile, getSongs) => {
          playlistname: {
            text: function(params) {
              return playlistObject.playlistName
-           }
-         },
-         songs: {
-           html: function(params) {
-             // getSongs().then(songs => {
-             //   data[0].songs = songs
-             console.log(this)
-             this.songs.map(song => {
-               return `<li>
-               <span> ${song.songArtist}</span>     
-               <span> ${song.songName}</span>     
-              </li>`
-             }).join('')
-             // })
            }
          }
        };

@@ -1,6 +1,7 @@
 import { hashToken } from "../modules/spotifyAuth.js";
 
 const userProfile = document.querySelector('.container')
+const errorMsg = document.querySelector('.error-msg')
 const playlistBtn = document.getElementById('playlist-btn')
 const playlistForm = document.getElementById('playlist-form')
 const playlistName = document.getElementById('playlist-name')
@@ -23,18 +24,18 @@ export const createPlaylistView = (getData) => {
 
    playlistBtn.addEventListener('click', () => {
 
+     if(playlistName.value === '') {
+       error.classList.toggle('show-screen-flex')
+       return
+     }
      if (long.checked) { term = 'songsLongTerm' }
      else if (medium.checked) { term = 'songsMediumTerm'}
      else { term = 'songsShortTerm'}
      let playlistObject = {
        term: term,
-       duration: playlistDuration.value,
+       duration: playlistDuration.value === '' ? 40 : playlistDuration.value,
        playlistName:  playlistName.value
      }
-     // playlistObject.term = term
-     // playlistObject.duration = playlistDuration.value
-     // playlistObject.playlistName = playlistName.value
-
 
      window.localStorage.setItem('playlist', JSON.stringify(playlistObject))
 
