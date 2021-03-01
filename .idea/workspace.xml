@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7e6a93a2-9d85-46d0-a817-ee803d6230b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/generic.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/generic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/postData.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/postPlaylist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/playlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/spotifyAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spotifyAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
       <workItem from="1613730822909" duration="6481000" />
       <workItem from="1614255773057" duration="20634000" />
       <workItem from="1614521824767" duration="13004000" />
+      <workItem from="1614603032500" duration="5652000" />
     </task>
     <servers />
   </component>
