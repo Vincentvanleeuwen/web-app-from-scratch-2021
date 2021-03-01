@@ -22,10 +22,11 @@ export const deleteColumns = (data) => {
 }
 
 export const restructureData = (data) => {
-
+  console.log('data =', data);
   let spotifyId = data[1][1],
     displayName = data[0][1],
-    spotifyImg = data[2][1][0].url
+    spotifyImg = data[2][1][0].url;
+
 
   return data.reduce((acc) => {
 
