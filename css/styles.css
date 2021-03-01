@@ -178,7 +178,7 @@ body {
   display: none;
 }
 #playlist-btn {
-  background-color: var(--primary-color);;
+  background-color: var(--cta-color);
   display: none;
   margin-top: 2em;
 }
