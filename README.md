@@ -2,22 +2,13 @@
 ### Web App From Scratch @cmda-minor-web 2020 - 2021
 
 
-
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
 https://combinify.netlify.app/
-<!-- ☝️ replace this description with a description of your own work -->
-
 
 Combinify is a playlist creating application that lets you create a combined playlist of multiple people their top songs.
 This application will be made without the use of Javascript Frameworks.
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+Check out the prototype @ https://xd.adobe.com/view/19b3c8d4-05bd-4ac2-ad30-a6d7686fc173-4ce0/?fullscreen&hints=off
 
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
 ## Learning goals
 
 * _You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns_
@@ -69,7 +60,6 @@ You can add however many other profiles as you'd like.
 
 I will allow users to delete songs from the playlist.
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
 ## External Data
 
 The [Spotify API](https://developer.spotify.com/documentation/web-api/) will be used in this project to get a list of a couple people's top tracks. 
@@ -102,7 +92,7 @@ const options = {
 ```
 
 Check out the [Reference](https://developer.spotify.com/documentation/web-api/reference/) page for further explanation on what links to get what data from.
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+
 
 ## Diagrams
 
@@ -112,11 +102,11 @@ Check out the [Reference](https://developer.spotify.com/documentation/web-api/re
 ## Checklist
 - [x] Connect to the spotify API
 - [x] Get the top tracks of the logged in user
-- [ ] Add more profiles
 - [x] Create a playlist
+- [x] Add songs to the playlist
 - [x] Set playlist name
-- [ ] Set max amount of songs
-- [ ] Set playlist length
+- [x] Set max amount of songs
+- [ ] Add more profiles
 - [ ] Add songs to a playlist
 - [ ] Delete songs from a playlist
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
