@@ -22,14 +22,14 @@ export const deleteColumns = (data) => {
 }
 
 export const restructureData = (data) => {
-  console.log('data =', data);
+
   let spotifyId = data[1][1],
     displayName = data[0][1];
 
+  console.log('imgurl =', data[2][1]);
+  let spotifyImg = data[2][1].length === 0 ? './img/placeholder.png' : data[2][1][0].url
 
-  let spotifyImg = data[2][1][0].url ? data[2][1][0].url : './img/placeholder.png'
-
-
+  console.log('data =', data);
 
   return data.reduce((acc) => {
 
