@@ -1,5 +1,5 @@
 import { hashToken } from "../modules/spotifyAuth.js";
-import { postData } from "../data/postData.js";
+import { postPlaylist } from "../data/postPlaylist.js";
 import { addSongsToPlaylist } from "../data/addSongsToPlaylist.js";
 
 const userProfile = document.querySelector('.container')
@@ -23,7 +23,7 @@ export const playlistView = (getProfile, getSongs) => {
    songLists.classList.toggle('show-screen-flex')
 
    // Get the id and href of newly made playlist
-   postData(data[0].id)
+   postPlaylist(data[0].id)
    .then(playlist => {
      console.log('playlist', playlist)
 

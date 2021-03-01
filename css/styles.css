@@ -14,6 +14,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 #app-title {
   font-size: min(calc(12px + 10vw), 4em);
@@ -149,7 +151,7 @@ body {
   color: #000;
 }
 #playlist-form fieldset input:checked + label {
-  background-color: #ff7a7a;
+  background-color: #ecb144;
   color: #fff;
   padding: 2em 1em;
   margin: -1em 0 0 0;
@@ -178,7 +180,7 @@ body {
 .error-msg {
   display: none;
   position: absolute;
-  color: orange;
+  color: #ecb144;
   left: 55%;
   font-size: clamp(.5em, 1vw, 2em);
   transition: .5s;
@@ -320,7 +322,8 @@ body {
   }
   #playlist-form fieldset label {
     color: white;
-    transition: .5s;
+    transition: .5s cubic-bezier(0.57, 0.54, 0, 0.7);
+    border-radius:5px;
   }
   #playlist-form fieldset input:checked + label {
     margin: 0;
