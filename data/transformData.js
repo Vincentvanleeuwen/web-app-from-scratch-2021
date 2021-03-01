@@ -28,7 +28,7 @@ export const restructureData = (data) => {
 
 
   let spotifyImg = data[2][1][0].url.length === 0 ?
-    './img/placeholder.jpg' :
+    './img/placeholder.png' :
     data[2][1][0].url;
 
 
