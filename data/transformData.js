@@ -27,8 +27,10 @@ export const restructureData = (data) => {
     displayName = data[0][1];
 
 
-  let spotifyImg = data[2][1][0].url.length === 0 ? 'https://media.istockphoto.com/vectors/default-profile-picture-avatar-photo-placeholder-vector-illustration-vector-id1223671392?b=1&k=6&m=1223671392&s=612x612&w=0&h=5VMcL3a_1Ni5rRHX0LkaA25lD_0vkhFsb1iVm1HKVSQ=' : data[2][1][0].url;
-  
+  let spotifyImg = data[2][1][0].url.length === 0 ?
+    './img/placeholder.jpg' :
+    data[2][1][0].url;
+
 
   return data.reduce((acc) => {
 
