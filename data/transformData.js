@@ -27,9 +27,8 @@ export const restructureData = (data) => {
     displayName = data[0][1];
 
 
-  let spotifyImg = data[2][1][0].url ?
-    './img/placeholder.png' :
-    data[2][1][0].url;
+  let spotifyImg = data[2][1][0].url ? data[2][1][0].url : './img/placeholder.png'
+
 
 
   return data.reduce((acc) => {
