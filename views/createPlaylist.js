@@ -24,10 +24,13 @@ export const createPlaylistView = (getData) => {
 
    playlistBtn.addEventListener('click', () => {
 
+     // If no playlist name is filled in, show error
      if(playlistName.value === '') {
        errorMsg.classList.toggle('show-screen-flex')
        return
      }
+
+     // Set the localstorage Playlist object
      if (long.checked) { term = 'songsLongTerm' }
      else if (medium.checked) { term = 'songsMediumTerm'}
      else { term = 'songsShortTerm'}

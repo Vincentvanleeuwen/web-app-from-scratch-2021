@@ -2,7 +2,7 @@ import { fetchData } from "../utils/fetchData.js";
 import { hashToken } from "../modules/spotifyAuth.js";
 
 
-// Export the data so routes can use it.
+// Create the playlist for a user
 export const postPlaylist = (id) => {
   let options;
 

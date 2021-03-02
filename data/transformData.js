@@ -5,6 +5,7 @@ const dataAttributes = [
   'items'
 ]
 
+// Delete unnecessary columns
 export const deleteColumns = (data) => {
 
   return Object.entries(data).map(entry => {
@@ -26,15 +27,16 @@ export const restructureData = (data) => {
   let spotifyId = data[1][1],
     displayName = data[0][1];
 
-  console.log('imgurl =', data[2][1]);
+  // If a user has no image, set placeholder image
   let spotifyImg = data[2][1].length === 0 ? './img/placeholder.png' : data[2][1][0].url
 
-  console.log('data =', data);
+
 
   return data.reduce((acc) => {
 
     let checkIndex = acc.findIndex(person => person.id === spotifyId)
 
+    // If user exists
     if (checkIndex > -1) {
       acc[checkIndex].name = displayName
       acc[checkIndex].img = spotifyImg
@@ -53,7 +55,7 @@ export const restructureData = (data) => {
   }, []);
 }
 
-
+// Change song object structure.
 export const restructureSongs = (data) => {
   let songs = []
   data[0][1].forEach(song => { songs.push(songObject(song)) })

@@ -3,20 +3,22 @@ import { postPlaylist } from "../data/postPlaylist.js";
 import { addSongsToPlaylist } from "../data/addSongsToPlaylist.js";
 
 const userProfile = document.querySelector('.container')
+const songLists = document.querySelector('.song-lists');
+const playlistOptions = document.querySelector('.playlist-options')
+
 const playlistForm = document.getElementById('playlist-form')
 const loginScreen = document.getElementById('login')
-const playlistOptions = document.querySelector('.playlist-options')
 const playlistBtn = document.getElementById('playlist-btn')
 const saveBtn = document.getElementById('save-button');
 const copyBtn = document.getElementById('copy-button');
 const copyTxt = document.getElementById('copy-text');
-const songLists = document.querySelector('.song-lists');
 
 export const playlistView = (getProfile, getSongs) => {
 
+ // Get the user profile
  getProfile.then(data => {
 
-
+   // Toggle old/new page elements
    playlistForm.classList.toggle('show-screen-flex')
    playlistOptions.classList.toggle('show-screen-flex')
    playlistBtn.classList.toggle('show-screen-flex')
@@ -38,6 +40,7 @@ export const playlistView = (getProfile, getSongs) => {
        copyBtn.innerHTML = "Copied URL"
      })
 
+     // Add the users addition to the newly created playlist
      saveBtn.addEventListener('click', () => {
        return addSongsToPlaylist(playlist.id, data[0].songs)
      })
@@ -45,6 +48,7 @@ export const playlistView = (getProfile, getSongs) => {
    })
    .catch(err => console.warn('Error getting id', err))
 
+   // Get the localStorage playlist data
    const playlistObject = JSON.parse(window.localStorage.getItem('playlist'))
 
 

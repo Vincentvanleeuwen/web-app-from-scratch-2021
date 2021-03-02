@@ -8,6 +8,7 @@ let uris = ""
 
 // Export the data so routes can use it.
 export const addSongsToPlaylist = (id, songs) => {
+  // Show loading text
   if(isLoading) {
     saveBtn.innerText = ""
     saveBtn.classList.toggle('saving')
@@ -36,6 +37,7 @@ export const addSongsToPlaylist = (id, songs) => {
           .then(data => { return data })
           .catch(err => console.warn(err, 'Error fetching Data'))
           .finally(()=> {
+            // Hide loading text, set success text
             isLoading = false;
             saveBtn.classList.toggle('saving')
             saveBtn.innerText = "Saved"

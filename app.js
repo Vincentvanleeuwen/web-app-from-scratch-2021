@@ -10,6 +10,7 @@ const playlistBtn = document.getElementById('playlist-btn')
 const init = () => {
   Routes();
 
+  // Show next screen if logged in to spotify.
   if (hashToken) {
     loginScreen.classList.toggle('show-screen-flex')
     loggedInScreen.classList.toggle('show-screen-flex')
@@ -20,21 +21,3 @@ const init = () => {
 }
 
 init();
-
-// Create playlist based on 2 or more user profiles
-// Mix most listened songs together
-
-// Get user by username
-// GET /v1/users/{user_id}
-
-// Create a Playlist
-// POST	/v1/users/{user_id}/playlists
-
-// Get a Playlist
-// GET	/v1/playlists/{playlist_id}
-
-// Add Items to a Playlist
-// POST	/v1/playlists/{playlist_id}/tracks
-
-// FEATURE
-// Let the person choose how many songs there should be in the playlist
